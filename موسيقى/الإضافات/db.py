@@ -6,7 +6,7 @@ from Music.MusicUtilities.database.chats import (get_served_chats, is_served_cha
 from Music.MusicUtilities.helpers.filters import command
 
 
-@app.on_message(filters.command("broadcast") & filters.user(SUDOERS))
+@app.on_message(filters.command("اذعه") & filters.user(SUDOERS))
 async def broadcast_message(_, message):
     if not message.reply_to_message:
         pass
