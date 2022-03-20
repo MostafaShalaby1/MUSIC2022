@@ -10,7 +10,7 @@ from pyrogram.errors import UserAlreadyParticipant
 
 
 @Client.on_message(
-    command(["join", f"userbotjoin"]) & ~filters.private & ~filters.bot
+    command(["انضم", f"دخول"]) & ~filters.private & ~filters.bot
 )
 @authorized_users_only
 @errors
@@ -20,7 +20,7 @@ async def join_group(client, message):
         invitelink = await client.export_chat_invite_link(chid)
     except:
         await message.reply_text(
-            "• **i'm not have permission:**\n\n» ❌ __Add Users__",
+            "• **ليـس لدي صلحيه:**\n\n» ❌ __اضافه مستخدمين__",
         )
         return
 
@@ -41,17 +41,17 @@ async def join_group(client, message):
         )
         return
     await message.reply_text(
-        f"✅ **userbot succesfully entered chat**",
+        f"✅ **جيـت يعم هتشغل اي ؟**",
     )
 
 
 @Client.on_message(
-    command(["leave", f"userbotleave"]) & filters.group & ~filters.edited
+    command(["غادر", f"userbotleave"]) & filters.group & ~filters.edited
 )
 @authorized_users_only
 async def leave_group(client, message):
     try:
-        await USER.send_message(message.chat.id, "✅ userbot successfully left chat")
+        await USER.send_message(message.chat.id, "✅ خـلاص يعـم هطلع بكرامتي ،، سلااام")
         await USER.leave_chat(message.chat.id)
     except:
         await message.reply_text(
@@ -61,7 +61,7 @@ async def leave_group(client, message):
         return
 
 
-@Client.on_message(command(["leaveall", f"leaveall@{BOT_USERNAME}"]))
+@Client.on_message(command(["مغادره", f"leaveall@{BOT_USERNAME}"]))
 @sudo_users_only
 async def leave_all(client, message):
     if message.from_user.id not in OWNER_ID:
