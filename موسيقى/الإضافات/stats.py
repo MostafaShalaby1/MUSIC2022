@@ -16,9 +16,9 @@ import time
 from pymongo import MongoClient
 from Music.config import MONGO_DB_URI as smex
 
-@app.on_message(filters.command("stats") & ~filters.edited)
+@app.on_message(filters.command("الحاله") & ~filters.edited)
 async def gstats(_, message):
-    m = await message.reply_text("**Getting Stats...**\n\nPlease wait for some time...")
+    m = await message.reply_text("**جـاري الكشف عن حاله البـوت...**\n\nانتـظر من فضـلك...")
     served_chats = []
     chats = await get_served_chats()
     for chat in chats:
