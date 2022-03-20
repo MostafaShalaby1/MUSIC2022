@@ -20,11 +20,11 @@ def play_markup(videoid, user_id):
                 InlineKeyboardButton(text="🖱 ᴍᴇɴᴜ", callback_data=f'other {videoid}|{user_id}'),
             ],
             [
-                InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{ZAID_SUPPORT}"),
-                InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton(text=f"✨جـروب الـدعم", url=f"https://t.me/{ZAID_SUPPORT}"),
+                InlineKeyboardButton(text=f"📣 قنـاه السـورس", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ],
             [      
-                InlineKeyboardButton(text="🗑 ᴄʟᴏsᴇ", callback_data=f'close2')
+                InlineKeyboardButton(text="اغــلاقᐬ", callback_data=f'close2')
             ],
         ]
     return buttons 
@@ -33,16 +33,16 @@ def play_markup(videoid, user_id):
 def others_markup(videoid, user_id):
     buttons= [
             [
-                InlineKeyboardButton(text="✨ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton(text="✨قنــاه السـورس", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 InlineKeyboardButton(text="➕ Group Playlist", callback_data=f'group_playlist {videoid}|{user_id}')
             ],
             [
-                InlineKeyboardButton(text="Get Audio", callback_data=f'gets audio|{videoid}|{user_id}'),
-                InlineKeyboardButton(text="Get Video", callback_data=f'gets video|{videoid}|{user_id}')
+                InlineKeyboardButton(text="الحصـول علي الصوت", callback_data=f'gets audio|{videoid}|{user_id}'),
+                InlineKeyboardButton(text="الحصـول علي الفـديو", callback_data=f'gets video|{videoid}|{user_id}')
             ],
             [
                 InlineKeyboardButton(text="🔙", callback_data=f'goback {videoid}|{user_id}'),
-                InlineKeyboardButton(text="🗑 Close", callback_data=f'close2')
+                InlineKeyboardButton(text="🗑اغـلاق", callback_data=f'close2')
             ],
         ]
     return buttons 
@@ -68,8 +68,8 @@ play_keyboard = InlineKeyboardMarkup(
                     )
                 ],
                 [
-                    InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{ZAID_SUPPORT}"),
-                    InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                    InlineKeyboardButton(text=f"✨ جـروب الـدعم", url=f"https://t.me/{ZAID_SUPPORT}"),
+                    InlineKeyboardButton(text=f"📣 قنـاه السـورس", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 ],
                 [
                     InlineKeyboardButton(
@@ -88,11 +88,11 @@ def audio_markup(videoid, user_id):
                 InlineKeyboardButton(text="⏹️", callback_data=f'stopvc2')
             ],
             [
-                InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{ZAID_SUPPORT}"),
-                InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton(text=f"✨ جـروب الـدعم", url=f"https://t.me/{ZAID_SUPPORT}"),
+                InlineKeyboardButton(text=f"📣 قنـاه السـورس", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ],
             [
-                InlineKeyboardButton(text="🗑 Close", callback_data="close2")              
+                InlineKeyboardButton(text="🗑 اغـلاق", callback_data="close2")              
             ],
         ]
     return buttons 
@@ -105,11 +105,11 @@ def single_markup(ID, duration, user_id, query):
                 InlineKeyboardButton(text="🔎 Search More", callback_data=f'popat 1|{query}|{user_id}')
             ],
             [
-                InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{ZAID_SUPPORT}"),
-                InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton(text=f"✨جـروب الـدعم", url=f"https://t.me/{ZAID_SUPPORT}"),
+                InlineKeyboardButton(text=f"📣 قنـاه السـورس", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ],
             [
-                InlineKeyboardButton(text="🗑 ᴄʟᴏsᴇ", callback_data=f"ppcl2 smex|{user_id}")
+                InlineKeyboardButton(text="اغـلاق ᐬ", callback_data=f"ppcl2 smex|{user_id}")
             ],
        ]  
     return buttons
@@ -158,11 +158,11 @@ def personal_markup(link):
                 InlineKeyboardButton(text="Watch on Youtube", url=f'{link}')
             ],
             [
-                InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{ZAID_SUPPORT}"),
-                InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton(text=f"✨ جـروب الـدعم", url=f"https://t.me/{ZAID_SUPPORT}"),
+                InlineKeyboardButton(text=f"📣 قنـاه السـورس", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ],
             [ 
-                InlineKeyboardButton(text="🗑 ᴄʟᴏsᴇ", callback_data=f'close2')
+                InlineKeyboardButton(text="اغـلاقᐬ", callback_data=f'close2')
             ],
         ]
     return buttons   
@@ -175,12 +175,12 @@ start_keyboard = InlineKeyboardMarkup(
                     )
                 ],
                 [
-                    InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{ZAID_SUPPORT}"),
-                    InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                    InlineKeyboardButton(text=f"✨جـروب الـدعم", url=f"https://t.me/{ZAID_SUPPORT}"),
+                    InlineKeyboardButton(text=f"📣قنـاه السـورس", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🗑 ᴄʟᴏsᴇ", callback_data="close2"
+                        "اغلاقᐬ", callback_data="close2"
                     )
                 ]    
             ]
@@ -197,8 +197,8 @@ confirm_keyboard = InlineKeyboardMarkup(
                     )
                 ],
                 [
-                    InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{ZAID_SUPPORT}"),
-                    InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                    InlineKeyboardButton(text=f"✨ جـروب الـدعم", url=f"https://t.me/{ZAID_SUPPORT}"),
+                    InlineKeyboardButton(text=f"📣 قنـاه السـورس", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 ],    
             ]
         )
@@ -214,8 +214,8 @@ confirm_group_keyboard = InlineKeyboardMarkup(
                     )
                 ],
                 [
-                    InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{ZAID_SUPPORT}"),
-                    InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                    InlineKeyboardButton(text=f"✨ جـروب الـدعم", url=f"https://t.me/{ZAID_SUPPORT}"),
+                    InlineKeyboardButton(text=f"📣 قنـاه السـورس", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 ],    
             ]
         )
@@ -224,7 +224,7 @@ close_keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🗑 Close", callback_data="close2"
+                        "اغلاقᐬ", callback_data="close2"
                     )
                 ]    
             ]
@@ -241,12 +241,12 @@ play_list_keyboard = InlineKeyboardMarkup(
                     )
                 ],
                 [
-                    InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{ZAID_SUPPORT}"),
-                    InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                    InlineKeyboardButton(text=f"✨ جـروب الـدعم", url=f"https://t.me/{ZAID_SUPPORT}"),
+                    InlineKeyboardButton(text=f"📣 قنـاه السـورس", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🗑 ᴄʟᴏsᴇ", callback_data="close2"
+                        "🗑اغلاق", callback_data="close2"
                     )
                 ]
             ]
@@ -259,11 +259,11 @@ def playlist_markup(user_name, user_id):
                 InlineKeyboardButton(text=f"{user_name[:8]}'s Playlist", callback_data=f'play_playlist {user_id}|personal'),
             ],
             [
-                InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{ZAID_SUPPORT}"),
-                InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton(text=f"✨ جـروب الـدعم", url=f"https://t.me/{ZAID_SUPPORT}"),
+                InlineKeyboardButton(text=f"📣 قناه السـورس", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ],
             [
-                InlineKeyboardButton(text="🗑 Close", callback_data="close2")              
+                InlineKeyboardButton(text="🗑 اغلاق", callback_data="close2")              
             ],
         ]
     return buttons
